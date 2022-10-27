@@ -1,0 +1,72 @@
+Es una sección importante, especialmente para todos los que están empezando de cero en React, ya que dará las bases de cómo segmentar la lógica de nuestra aplicación en pequeñas piezas más fáciles de mantener.
+
+	01 - Nuestra primera aplicación - Hola Mundo
+
+	02 - Exposiciones sobre los componentes
+
+	03 - Creación de componentes (Functional Components)
+
+	04 - Impresiones en el HTML
+
+	05 - Propiedades - Props
+
+	06 - PropTypes
+
+	07 - DefaultProps
+
+	08 - Introducción general a los Hooks
+
+	09 - useState
+
+01 - Nuestra primera aplicación - Hola Mundo
+	- npx create-react-app my_app
+	- npm start 
+	-  
+01 - Estructura de directorios
+	- https://developers.google.com/search/docs/advanced/robots/intro?hl=es&visit_id=637825067364886406-1013746340&rd=1
+	- La carpeta NODE_MODULES solo esta disponible en desarrollo.
+	- Luego tiene la carpeta public que tiene el contenido que viene por defecto al iniciar un nuevo proyecto.
+	- https://developers.google.com/web/ilt/pwa
+	- Un nuevo proyecto de react trae configuracion por defecto para construir una pagina web progresiva.
+	- https://create-react-app.dev/docs/available-scripts/
+	- 
+	- package.json tiene configuraciones de Node.
+
+01 - Contenido del SRC
+
+01 - Hola Mundo React
+	- El REACT-DOME es el encargado para hacer renderizaciones del HTML.
+	- ReactDOM.render para renderizar mi html, es lo que vamos a usar porque ReactDOM nos va a proveer otras carecteristicas para armar el arbol de componentes de manera sencilla entre otras cosas.
+
+02 - Exposiciones sobre los componentes
+	- El nombre de los componentes se crea con Upper Camel Case.
+
+03 - Creación de componentes (Functional Components)
+	- En react, tenemos dos tipos de componentes, los que estan basados en clases y los que estan basados en funciones (Funciones es la forma que react esta empujando a que se haga el codigo).
+	- Los que estan basados en funciones se llaman Funtional Component.
+
+03 - Uso de Fragment
+	- Teniendo en cuenta que las funcional compoonent solo pueden entregar un solo objeto en el return y que ocacionalmente sea necesario enviar mas de uno, podemos hacer uso de la etiqueta <Fragment> que en su version corta y mas usada es la sigueinte <>...</>. Esto nos ayuda a evitar el uso de <div> que no tienen uso.
+
+04 - Impresion de variables en el HTML
+	- Con las etiquetas de html usamos llaves para imprimir variables, pero no funciona para cualquier tipo de atributo. En caso de que necesitemos imprimir objetos podemos utilizar la etiqueta <pre> el JSON.stringify(variable, null, 3) entre llaves.
+
+05 - Propiedades - Props
+	- Comunicacion entre componentes - Props: Todas los componentes reciben las properties.
+	- Siempre recibimos la proos, pero en caso de que no la envien puedo o bien definir un valor por defecto para la props o obligar al padre a que siempre la envie.
+
+06 - PropTypes
+	- Para obligar el envio de las props importo PorpTypes desde 'prop-types' y defino el objeto de propiedades dentro del FC (functional component).
+
+07 - DefaultProps
+	- Si marco una prop como isRequired el uso de defultProps quedaria obsoleto.
+
+08 - Introducción general a los Hooks
+	- Uso de Eventos
+	- https://es.reactjs.org/docs/events.html
+	- las funciones se llaman cada vez que react renderiza la pagima, pero esto si esto no es lo que estoy buscnado se puede o bien pasar la referencia de la funcion directamente o que la funcion que llamamos returne una nueva funcion.
+
+09 - useState
+	- https://es.reactjs.org/docs/hooks-intro.html
+	- react previene el cambio del estado forzando a usar el metodo set del hook
+	- 

@@ -1,0 +1,15 @@
+¿Qué veremos en esta sección?
+
+CRUD hacia Firestore
+
+Expandiendo nuestro estore añadiendo otros reducers
+
+Seleccionar y subir archivos
+https://cloudinary.com/
+
+Animaciones adicionales a nuestra aplicación
+https://sweetalert2.github.io/#download
+
+Limpieza en el logout
+
+Esta sección está enfocada ahora en las entradas de nuestro diario, asegurándose de que grabe únicamente en el documento del usuario autenticado.

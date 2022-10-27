@@ -1,0 +1,35 @@
+01 - Material UI
+
+02 - Diferentes componentes de material
+
+03 - Uso de funciones propias de MaterialUI
+
+04 - Configuración de temas personalizados
+
+/*No es una Pagina, No es una Vista... Es un componente (navbar) --> Si es standar en toda la aplicacion podriamos ponerlo dentro de un apartado UI*/
+
+/*A partir de este modulo comenzamos a utiliza Vite para crear y lazar los proyectos de React*/
+/*Recordar indagar mas sobre Vite y cuando se comenzo a usar en el curso*/
+/*COMANDOS: 
+	yarn create vite
+	**seleccionar react**
+	yarn **solo para instalar las dependencias**
+	yarn dev **para lanzar el proyecto**
+
+		Veo que utiliza una metodologia de Archivos Barril para juntar las exportaciones de archivos jsx. (No tengo idea de porque lo hace),
+		parece que ayuda a no tener tantas importaciones regadas por todos lados.
+
+*/
+
+	. Las paginas deberian usar el componente de Typography para renderizar el componente jsx.
+	. Si quiero que el elemento del componente html sea del tipo que defini en el tema utilizo el parametro VARIANTE para extablecer el componente html (Ej. <Typography variant='h1'> JournalPage</Typography>)
+
+	. sx: Es una propiedad del componente Grid de material, te permite acceder a propiedades definidas en el ThemeProvider que configuramos en el proyecto.
+
+	. Un layout es como cualquier otro functional component, pero en este caso el contenido es algo que voy a reutilizar en otras partes del proyecto.
+
+	. Material tiene sus propias definiciones para los componentes de una web, un sidebar se conoce como drawer, el navbar no existe como tal.
+
+	. <box><box/> es como la representacion de un div. A este box podemos definirle su caracteristica utilizando el atributo component (Ej: component: 'main' -> esto reemplaza el componente main).
+	. Porque user <Grid/> y no <Box/>? Un box es como un div y un Grid te permite utilizar elementos internamente, jugar con el orden y el alineamiento.
+	

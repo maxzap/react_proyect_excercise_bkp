@@ -1,0 +1,23 @@
+En esta sección aún no haremos protección de rutas, pero dejaremos el estilo de esos componentes listos para la siguiente sección.
+Aquí quiero enfocarme en la funcionalidad de la aplicación suponiendo que estamos autenticados.
+
+01 - SPA ( Single Page Application ) a profundidad
+
+02 - Diferentes temas en la misma aplicación aplicados a diferentes rutas
+
+03 - Multiples Routers
+
+04 - Push y Replace en el History
+
+05 - Leer argumentos por URL
+
+06 - QueryParams
+
+07 - Aplicar filtros utilizando QueryStrings
+
+
+
+
+05 - Leer argumentos por URL
+	- useParams() hook que nos permite leer los queryParam que se utilizaron para llegar al sitio al que fuimos dirigido.
+	

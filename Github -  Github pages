@@ -1,0 +1,15 @@
+Aunque es una sección pequeña, les puede servir para desplegar infinidad de proyectos de React de forma gratuita, sin contar que tendrán respaldos de sus proyectos por si llegan a perder su trabajo que tenían localmente en su computadora.
+
+01 - Aprender cómo realizar backups a repositorios de Git
+
+02 - Subir nuestro repositorio a GitHub
+
+03 - Uso de Github Pages
+
+04 - Desplegar nuestra aplicación de React
+
+04 - Generar build de producción de nuestra aplicación
+
+** una vez que tenemos el build de produccion, si lo que queremos es publicar el sitio en github deberiamos cambiar el nombre del la carpeta 
+build a docs, de esa manera github pages va a buscar el contenido ahi adentro. **
+*** editar los hrefs del index.html para que busquen los archivos dentro de la carpeta docs y no en la raiz, de lo contrario la pagina va a dar errores **

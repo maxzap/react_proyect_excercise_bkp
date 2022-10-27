@@ -1,0 +1,69 @@
+conceptos de REACT.
+
+Que es react?
+ - Es una libreria para crear aplicaciones, podes pegarla en el html de tu pagina y empezar a usarlas.
+ - Esta hecha para trabajar en plataformas de varias magnitudes.
+ - Al ser una libreria declarativa es necesario seguir patrones de diseño.
+ - Se separan en componentes que pueden tener estados o no.
+ - Se puede trabajar del lado del servidor con Node o crear aplicaciones moviles con React Native ademas de aplicaciones de escritorio usando electron.
+ 
+ 
+Que es JSX?
+	- Es la mezcla entre JS y XML;
+	- 
+Que es un componente?
+    - Es una porcion de codigo encapsulada que puede tener estado o no. y que realiza un trabajo especifico.
+    - El estado es como se encuentra la informacion que contiene el componente en un estado del tiempo.
+    - TwitterApp > ROuter > Screen > Menu > MenuItem
+Router
+    - No ayuda a realizar la navegacion entre paginas si hacer refresh del navegador.
+
+definicion de segmentos de una pagina:
+    - COMPONENTE: Es una pieza pequeña de mi aplicacion.
+    - LAYOUT: Es el cascaron que esta mas relacionado al estilo de mi aplicacion.
+    - PAGINAS: Es algo que cubre toda la pantalla del punto de vista del usuario.
+    - VISTA: Es una porcion de la pagina que visualiza el usuario. (Una pagina puede tener varias vistas).
+
+
+
+
+NOTAS:
+    - React usa babel para transformar codigo nuevo para que sea compatible con los navegadores viejos cuando estamos trabajando en archivos jx.
+    Pero cuando trabajamos en archivos jsx esta dependencia ya no es utilizada.
+
+    - El Main siempre queda en el modo Stricto <React.StrickMode> que trae ciertos beneficios (Cuales son los benificios de tener el modo stricto activo en el mail?) pero a su vez tiene consecuencias problematicas, uno de ellos es que siempre dispara los useEffects() y el useLayerEffect() dos veces.
+
+
+NOTAS CODIGO:
+
+    - Los valores Booleanos no se renderizan, utilizar JSON.stringify( valor ) para mostrarlo
+
+    - Para buscar elementos dentro del dom usamos la funcion conts divRoot = document.querySelector('#root'). y obtenemos la referencia a esa elemento
+
+    - Puedo incluir codigo de js entre las llaves {}.
+    - Un signo de interrogacion ? en un objeto evita que de un error al intentar acceder a una propiedad de este cuando es undefine (objeto?.getName).
+    - Para crear una nueva aplicacion de react ejecutamos la siguiente linea que nos ofrece Node npx create-react-app my-app.
+    - Inicializamos el proyecto con npm start o yarn start
+    - Documentacion sobre la estructura de archivos de los proyectos.
+        - https://es.reactjs.org/docs/faq-structure.html
+        - https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
+    - El fragment es un agrupador de cofigo jsx, podemos omitir el uso del fragment cuando tenemos otr  o agrupador, un ejemplo es la etiqueta form
+
+    ESTRUCTURA DE DIRECTORIO
+        - el directorio HELPERS contiene funciones que realizan un cierto trabajo especifico, pueden recibir argumentos, lo precesan y hacen algun return, que hace falta que redibujen el state o algo asi.
+
+    BUILD EN PRODUCCION
+        - npm run build crear el directorio build en la raiz del proyecto el cual tiene lo necesario para desplegar en produccion
+        - npm install --global http-server (herrramienta para crear un server en local host).
+        - http-server -o es el comando que vamos a correr dentro del direcgorio build para levantar el server y confirmar que levante correctamente.
+    
+    WRAPPER
+        - en la funcion find() del wrapper podemos enviar como argunmento la etiquera html que estamos queriendo analizar o bien, la clase (.xxxx). el id (#id) y si son varias .add().
+        - 
+
+    FORMULARIOS:
+        - Toda la logica del formulario debe de ser abastracta para el componente padre/hijo, por lo tanto deberia encapsularse en un componente separado.
+        -
+    Higher Order Components (HOC)
+        - Basicamente es un elemento que permite agrupar componentes en su interior, es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React
+        - 

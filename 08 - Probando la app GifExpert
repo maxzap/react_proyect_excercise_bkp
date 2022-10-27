@@ -1,0 +1,32 @@
+
+En esta sección seguiremos expandiendo todo lo que habíamos visto anteriormente en otras secciones de pruebas, pero ahora veremos más a detalle los temas y adicionalmente introduciremos nuevos conceptos y nuevos tipos de pruebas.
+
+01 - Seguir el camino de las pruebas
+
+02 - Pruebas en componentes específicos
+
+03 - Pruebas en componentes de forma individual
+
+04 - Pruebas con customHooks
+
+05 - Esperar cambios en un customHook
+
+06 - Simular eventos en inputs y formularios
+
+07 - Simular llamadas a funciones
+
+08 - Evaluar si existen elementos en el componente
+
+
+02 - Pruebas en componentes específicos
+	- en lugar de utilizar el resultado del wrapper, al ser un objeto obtener las propiedades accediendo al elemento html.
+	img.prop('scr').tobe(algo)
+
+06 - Simular eventos en inputs y formularios
+	- Las variables usadas en los mocks de las pruebas se limpian dentro de un callback en el beforeEach
+	con la funcion jest.clearAllMocks();
+	- las acciones se simulan con la funcion simultate() de los wrappers.
+	- los callbacks se mockean con la funcion jest.fn
+04 - Pruebas con customHooks
+	- https://react-hooks-testing-library.com/
+	- esta librearia pemite realizar pruebas sobre hooks mockeando ofreciendonos herramientas para mockear las llamadas.

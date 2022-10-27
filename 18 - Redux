@@ -1,0 +1,52 @@
+¿Qué veremos en esta sección?
+
+01 - Redux
+
+02 - Store
+
+03 - Middlewares
+
+04 - Dispatch
+
+05 - Actions
+
+06 - State
+
+07 - Acciones asíncronas
+
+08 - RTK Query
+
+09 - Redux Toolkit
+
+10 - Slices
+
+
+{
+	**Si yo quiero hacer algo cuando se cargue el componente y que lo haga solo una vez voy a utilizar el hook useEffects()**
+
+	LINEAMENTOS DE REDUX: Yo disparo acciones, esas acciones crean nuevos estados y esos estados renderizan nuevamente los componentes.
+
+	AXIOS: una linbreria para manejar las peticiones http, esta libreria ya reliza la deserializacion de los objetos de respuesta.
+	Se utiliza alternativamente a fetch api;
+
+	REDUX: Es el patron que define la metodologia de uso.
+	REDUX REACT: Es una forma de trabajar con redux en una aplicacion de ract. Ofrece varios componentes.
+	REDUX TOOLKIT: Es una seria de componentes especializados para trabajar con redux de manera mas sencilla.
+	RTK Query: es una herramienta para obtener data y ofrece mecanismos para cachearla.
+	(LEER!! Sobre react query, useSWR) y RTKQUERY
+
+	. https://redux-toolkit.js.org/
+	. https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+	THUNKS: Es una accion que es asincrona que dispara otra accion, resuelve la peticion asincrona.
+}
+
+Es una sección sumamente pequeña, pero quiero darles una explicación teórica sobre Redux antes de entrar en él, pero la ventaja es que para estas alturas, ya deberíamos de saber sobre el Reducer, el cual es el corazón del Redux, por consecuencia aprender Redux en este instante debería ser más fácil!
+
+01 - Redux es un contenedor predecible del estado de nuestra aplicacion, es una forma de controlar donde se encuentra la informacion de mi aplicacion en todo momento. Y tambien ayuda a que la modificacion de la informacion siempre sea de una una sola via de manera predecible para evitar cambios indeseados en mi aplicacion.
+	
+ 	- Redux es totalmente independiente de React.
+
+ 02 - se conoce como la fuente unica de la verdad
+ 	- El stor almacena toda la informacion de nuestra app, solo se modifica a traves de un dispatcher, que a la vez asigna la tarea de modificacion al reducer responsable de la tarea. La informacion que se encuentra en el store se muestra en un View, puede ocurrir que se desee disparar una accion para modificar dicha informacion, para esto es necesario armar un Action y enviarlo para que lo procese el dispatcher. Solo si esta Action es una tarea asincronica, antes de llegar al dispatcher (que solo procesa procesos sincronos) pasa por el Middlewares y luego si se procesa la respuesta recibida en el dispatcher.
+
+ 	- El slice no es mas que una funcion que recibe un objeto.

@@ -1,0 +1,61 @@
+Estos son los Hooks relativamente simples, aún hay mas que explicaremos más adelante, pero en esta sección nos enfocaremos en estos trabajos y para qué nos pueden servir.
+
+Adicionalmente estaremos dejando las bases para lo que será una sección de pruebas sumamente interesante después.
+
+01 - Profundizar en el tema de los Hooks
+
+02 - Crear otros customHooks
+
+03 - useState
+
+04 - useCounter - Personalizado
+
+05 - useEffect y sus precauciones
+
+06 - useRef
+
+07 - useFetch - Personalizado + optimizaciones
+
+08 - useLayoutEffect
+
+09 - Memo
+
+10 - useMemo
+
+11 - useCallback
+
+01 - Profundizar en el tema de los Hooks
+	- https://getbootstrap.com/
+
+
+05 - useEffect y sus precauciones
+	- es un hook que nos permite ejecutar un efecto secundario cuando algo ocurra en nuestro componente.
+	- React no permite utilizar hooks de manera condicional (Ej. Usando un if), es considerada una mala practica.
+	- permite ademas desacoplar el componente y finalizar las tareas secundarias una vez que este hook ya no se encuentra en uso.
+	
+
+07 - useFetch - Personalizado + optimizaciones
+	- https://breakingbadapi.com/
+	- api que devuelve citas de breaking bad
+	- 
+06 - useRef
+	- este hook permite mantener una referencia presente aun cuando el componente en el que se encuentra haya sido desmontado.
+
+08 - useLayoutEffect
+	- https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect
+	- El objetivo del useLayoutEffect es que despues de que se renderice algo, yo puedo sacar mediciones de como quedaron divs o diferentes componentes, es decir los tamaños.
+	O bien ejecutar codigo una vez de que se haya renderizado todo el html
+
+
+11 - useCallback
+	- Tenemos dos casos de uso para utilizar el useCallback y que nos ayude a solucionar esos problemas.
+	- El primero es cuando llamamos a un funcional component (dependencia externa) desde una funcion interna, cada vez que se renderice el componente padre,
+	la funcion interna va a disparar el renderizado de la dependecia externa, en el caso de un dibujo de un objeto esto no tiene sentido. Por eso es necesario
+	utilizar el React.memo() en la dependencia interna, pero eso no basta, tenemos que encerrar la llamada de la funcion que dispara la dependencia externa
+	con el useCallback()
+	- Es IMPORTANTE no utilizar dentro de la funcion que estamos llamando en nuestro caso de uso la variable (dependencia) que cambie y que dispare el renderizado de nuestro
+	componente padre, porque esto rompe con nuestra solucion del useCallback. Para esto usamos una funcion anonima de la siguiente manera c => c + 1.
+	- 
+	- Cuando usamos un useEffect y el efecto tiene una dependencia y esa dependencia es la funcion entonces es recomendado usar el useCallBack. Porque de lo contrario
+	cada vez que se renderiza la pagina se dispararia la funcion del useEffect generando que el componente hijo que utiliza nuestra funcion interna se renderice sin 
+	necesidad.

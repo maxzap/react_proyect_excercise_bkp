@@ -1,0 +1,24 @@
+El objetivo de la sección es principalmente aprender sobre el Context, el Router es un valor agregado que explotaremos mucho más en próximas secciones, pero al usar un Router, podemos explicar claramente el problema y necesidad del context.
+
+01 - Context
+
+02 - Provider
+
+03 - useContext
+
+04 - React Router
+
+05 - Links y NavLinks
+
+06 - CreateContext
+
+07 - SPA ( Single Page Application )
+
+
+
+01 - Context
+	- https://v5.reactrouter.com/web/api/NavLink
+	- La documentacion del router sugiere que el orden de las rutas deberia ser ubicando la ruta mas general al final de la lista.
+
+05 - Links y NavLinks
+	- La unica diferencia entre Link y NavLink es que Navlink puede establecer una clase si coincide con el path.

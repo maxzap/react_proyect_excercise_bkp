@@ -1,0 +1,20 @@
+¿Qué veremos en esta sección?
+
+Profundizando en pruebas
+
+Pruebas en Firebase y Firestore
+
+Pruebas con reducers
+
+Variables de entorno de desarrollo, test y producción
+
+Pruebas en tareas asíncronas
+
+
+
+Esta sección continúa el tema de las pruebas unitarias y de integración con el objetivo de seguir cubriendo temas nuevos. Las pruebas conforme se van avanzando, efectivamente se van haciendo más complejas pero la idea es darles a ustedes las herramientas para que puedan probar cualquier cosa que ustedes necesiten.
+
+**** Para realizar una instalacion de una dependencia que sea solamente del ambiente de Desarrolo utilizamos la opcion -D en la instalacion del sdk Ej: yarn add -D cloudinary ****
+**** Las variables de entorno ya se encuentran configuradas en un proyecto con vite ****
+**** En testing no podemos acceder a la variables de entorno, no podemos utilizar el import.meta.env, en la parte de testing (que es node) tenemos el process.env, pero por el contrario no es posible utilizar estas mismas en desarrollo. Luego de configurar una variable de entorno en los archivos .env es necesario que las mismas antenpongan la palabra "VITE_VARIABLE_DE_ENTORNO"****
+	

@@ -1,0 +1,30 @@
+	Esta es una sección dedicada a comprender el concepto de un Reducer, el cual es sumamente importante para poder entrar a Redux o bien usar el contextAPI fácilmente.
+
+01 - useReducer
+
+02 - Reducers
+
+03 - Teoría de un reducer
+
+04 - Aplicación de TODOs
+
+05 - CRUD local
+
+01 - useReducer
+	- https://es.reactjs.org/docs/hooks-reference.html#usereducer
+	- 
+
+
+03 - Teoría de un reducer
+	- El hook useReducer es una alternativa al useState, que se emplea cuando el manejo de estado requiere de mucha logica involucrada.
+	- DEBE SER UNA FUNCION PURA
+		- No debe de tener efectos secundarios.
+		- No debe de realizar tareas asincronas.
+		- Debe de rontornar siempre un estado nuevo.
+		- No debe de llamar localStorage o sessionStorage.
+		- Para modificar el state no debe de requerir mas que una accion que puede tener artgumento o no.
+
+	- El reducer, en principio es una funcion y es la unica que permite la modificacion del state y por ende la unica
+	habilitada para modificar la vista de mi aplicacion.
+	otros servicios/componentes pueden disparar acciones para cambiar el state pero solo el reducer es el que autoriza/filtra ese cambios teniendo en cuenta las normas que gestionan el concepto de reducer.
+	-

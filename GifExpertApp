@@ -1,0 +1,17 @@
+Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después.
+
+01- Custom Hooks
+ - 
+02- Fetch hacia un API
+03- Comunicación entre componentes
+04- Clases de CSS
+05- Animaciones
+06- Enviar métodos como argumentos
+07- Crear listados
+08- keys
+09- Giphy
+
+01- Custom Hooks
+    - Una forma de extraer logica de un componente (logica que quiero reutilizar) de manera que se sencillo utilizarla.
+    - Los hooks se guardan dentro del directorio Hooks y el archivo siempre debe comenzar con la palabra use (useAlgo) segun el estandar.
+    - 

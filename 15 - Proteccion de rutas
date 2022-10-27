@@ -1,0 +1,20 @@
+Esta es una sección pequeña pero importante para trabajar las bases de la autenticación y protección de nuestra aplicación.
+
+01 - Rutas públicas
+
+02 - Rutas privadas
+
+03 - Login y logout - Sin backend aún
+
+04 - Recordar cuál fue la última ruta visitada para mejorar la experiencia de usuario.
+
+05 - Context
+	- usamos el creatConctext() de react para proveer informacion a todo los componentes de mi aplicacion.
+	Esta informacion se comparte desde al componente padre a todos sus hijos.
+
+06 - Reducer (Que es un reducer? No es mas que una simple funcion.)
+
+
+
+
+

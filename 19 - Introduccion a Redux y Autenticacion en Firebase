@@ -1,0 +1,35 @@
+01 - Redux aplicado en nuestro proyecto
+
+02 - Firebase
+https://firebase.google.com/
+
+03 - FireStore
+
+04 - Redux Devtools
+
+04 - Thunk
+
+06 - Formularios
+
+07 - Google SingIn
+
+08 - Acciones Asíncronas
+
+09 - Mantener el estado de la autenticación
+
+**DB NO RELACIONALES: Las colecciones tienen mayor flexibilidad que las tablas de las bd relacionales**
+**Webpack es un agrupador de modulos**
+
+En esta sección configuraremos Redux en nuestro proyecto por primera vez, aplicado al inicio en la parte de la autenticación y mantener el estado de la misma a lo largo de toda la aplicación.
+
+	**REDUX TOOLKIT: Lo vamos a utilizar para gestionar nuestro gestor de estados**
+	**hacer el dispatch de algun thunk para las tareas asincronas**
+	https://redux-toolkit.js.org/tutorials/quick-start
+		1-Instalmos redux-toolkit etc.
+		2-Configuramos el store
+		3-Agregamos el provider en el maim.js
+		4-establecimos el slice de nuestro reducers
+		5-seteamos el reducer en el store.
+		6-
+
+02 - Firebase es un backend completo: 

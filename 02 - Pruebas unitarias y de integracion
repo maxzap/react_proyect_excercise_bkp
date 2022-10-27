@@ -1,0 +1,123 @@
+Esta sección de pruebas es sumamente importante porque nos dará la base de las pruebas que estaremos haciendo durante el curso, las pruebas irán creciendo en complejidad, por lo que les recomiendo que nos aseguremos de comprender bien todos estos conceptos para que nos sea más fácil las siguientes secciones de pruebas.
+
+
+01 - Introducción a las pruebas
+
+01 - AAA
+
+01 - Arrange - Arreglar
+
+01 - Act - Actuar
+
+01 - Assert - Afirmar
+
+01 - Primeras pruebas
+
+01 - Jest
+
+01 - Expect
+
+01 - toBe
+
+Agrego comentarios de la segunda fase de pruebas, enfocadas a las pruebas sobre hooks. Simplemente para unificar la informacion en un achivo.
+
+01 - Enzyme
+
+01 - Comandos útiles en la terminal para pruebas
+
+01 - Revisar elementos renderizados en el componente
+
+01 - Simular eventos
+
+
+
+
+01 - Introducción a las pruebas
+
+02 - AAA
+
+02 - Arrange - Arreglar
+	- Se establece el estado inicial.
+	- Inicializamos Variables, realizamos importaciones necesarias.
+
+02 - Act - Actuar
+	- Acciones o estimulos.
+	. Llammos metodos y simulamos clicks.
+
+02 - Assert - Afirmar
+	- Observar el comportamiento resultante.
+
+03 - Primeras pruebas
+
+	- https://jestjs.io/docs/expect#tobevalue
+
+04 - Jest
+
+05 - Expect
+
+06 - toBe
+
+07 - Enzyme
+
+	- https://enzymejs.github.io/enzyme/
+	- no se encuentra disponible la version de Enzyme para React 17, es por eso que hay que bajarse la version correspondiente.
+	- https://www.npmjs.com/package/enzyme-to-json
+	- esta libreria convierte los wrappers de Enzyme y los hace compatible con el testing de snapshot de Jest.
+	- https://github.com/wojtekmaj/enzyme-adapter-react-17
+	- Version del adapter de enzyme para la version 17 de React.
+
+
+
+08 - Comandos útiles en la terminal para pruebas
+
+09 - Revisar elementos renderizados en el componenteT
+
+10 - Simular eventos
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	- https://reqres.in/api/users?page=2
+	- 
+
+Pruebas unitarias y de integracion sobre hooks.
+01 - config.
+	- npm install --save-dev @testing-library/react-hooks
+	- libreria para hacer las devoluciones de los hooks.
+02 - renderHook
+	- para evaluar el resultutado de un hook utilizamos el renderHook pasandole como argumento el hook que nos interesa probar.
+03 - MOUNT: se importa de enzyme al igual que el shallow, funciona de la misma manera tambien, pero a diferencia del shallow se cambia el contexto desde el cual se esta probando.
+04 - ACT: cuando probamos una funcion que dispara renderizacion del front es necesario embolver la funcion con el hook act que se importa de react.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+En esta sección seguiremos expandiendo todo lo que habíamos visto anteriormente en otras secciones de pruebas, pero ahora veremos más a detalle los temas y adicionalmente introduciremos nuevos conceptos y nuevos tipos de pruebas.
+
+01 - Seguir el camino de las pruebas
+
+02 - Pruebas en componentes específicos
+
+03 - Pruebas en componentes de forma individual
+
+04 - Pruebas con customHooks
+
+05 - Esperar cambios en un customHook
+
+06 - Simular eventos en inputs y formularios
+
+07 - Simular llamadas a funciones
+
+08 - Evaluar si existen elementos en el componente
+
+
+02 - Pruebas en componentes específicos
+	- en lugar de utilizar el resultado del wrapper, al ser un objeto obtener las propiedades accediendo al elemento html.
+	img.prop('scr').tobe(algo)
+
+06 - Simular eventos en inputs y formularios
+	- Las variables usadas en los mocks de las pruebas se limpian dentro de un callback en el beforeEach
+	con la funcion jest.clearAllMocks();
+	- las acciones se simulan con la funcion simultate() de los wrappers.
+	- los callbacks se mockean con la funcion jest.fn
+04 - Pruebas con customHooks
+	- https://react-hooks-testing-library.com/
+	- esta librearia pemite realizar pruebas sobre hooks mockeando ofreciendonos herramientas para mockear las llamadas.
