@@ -1,1 +1,1 @@
-***Ejercicios y projectos del curso de React***
+***Ejercicios y proyectos del curso de React***
